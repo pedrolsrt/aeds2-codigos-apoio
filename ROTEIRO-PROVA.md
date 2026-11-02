@@ -325,6 +325,23 @@ java -cp bin App produtos-exemplo.txt
 
 **Sequência de menu para conferir:** iniciar pedido (4), escolher produto e quantidade, finalizar (5), repetir com outro pedido e usar a opção 6 em Pilhas; em Filas, após finalizar dois pedidos, testar as opções 6, 7 e 8. No arquivo `produtos-exemplo.txt` há somente seis produtos, facilitando localizar um pelo código ou nome.
 
+### 6.1. Ensaio rápido com respostas conhecidas (dados de teste)
+
+Use **`produtos-exemplo.txt`** e crie dois pedidos, sempre escolhendo a forma de pagamento **2 (a prazo)**:
+
+1. Opção **4**: forma de pagamento `2`, quantidade de produtos `1`, nome `Caderno`, quantidade `2`; pressione Enter na pausa.
+2. Opção **5**: finalize o primeiro pedido; pressione Enter na pausa.
+3. Opção **4**: forma de pagamento `2`, quantidade de produtos `1`, nome `Lapis`, quantidade `3`; pressione Enter na pausa.
+4. Opção **5**: finalize o segundo pedido; pressione Enter na pausa.
+
+**Se estiver em Pilhas:** opção **6**, informe `2`. A listagem deve começar por **Lapis** (pedido mais recente) e depois mostrar **Caderno**.
+
+**Se estiver em Filas:** opção **6**, informe `2`. A média esperada é **R$ 16,50** (Caderno: R$ 24,00; Lapis: R$ 9,00). Na opção **7**, informe `2` e depois `10`: deve aparecer somente o pedido do Caderno. Na opção **8**, informe `2` e depois o código `10000`: deve aparecer o pedido do Caderno. Pressione Enter quando o programa pedir para continuar.
+
+**Atenção aos códigos de produto:** `01 - Caderno` na listagem significa **posição 1**, não código `1`. No arquivo de teste, os identificadores internos começam em `10000`: Caderno = `10000`, Lapis = `10001`. O menu **8 de Filas** solicita esse identificador interno, enquanto a inclusão de produtos na opção **4** solicita o **nome exato** (sem diferenciar maiúsculas e minúsculas).
+
+Esse ensaio verifica a navegação e os resultados; não altera a estrutura nem substitui as exigências do enunciado da avaliação.
+
 ## 7. Checklist de entrega
 
 - [ ] A solução usa **Pilha (LIFO)** ou **Fila (FIFO)** conforme o enunciado.
