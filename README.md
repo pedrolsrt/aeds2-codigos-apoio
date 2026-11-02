@@ -2,6 +2,8 @@
 
 Material de consulta em Java, separado do repositório da atividade já realizada.
 
+**PARA A AVALIAÇÃO: comece pelo [`ROTEIRO-PROVA.md`](ROTEIRO-PROVA.md).** Ele indica o arquivo certo para cada pedido do enunciado, os métodos completos para copiar e os cuidados para adaptar ao código-base da prova.
+
 ## Escolha o projeto
 
 | Tema | Pasta | Base | Métodos para localizar |

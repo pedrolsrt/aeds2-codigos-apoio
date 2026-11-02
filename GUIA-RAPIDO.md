@@ -1,5 +1,7 @@
 # Guia rápido para a atividade de estruturas lineares
 
+**Se estiver na prova e quiser localizar/copiar o trecho certo, abra primeiro [`ROTEIRO-PROVA.md`](ROTEIRO-PROVA.md).**
+
 ## 1. Identificar o tema
 
 **Pilha = LIFO** (último a entrar, primeiro a sair). Abra `pilhas/src/Pilha.java` e `pilhas/src/App.java`.
