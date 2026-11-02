@@ -49,9 +49,19 @@
 7. Menu e formato de saída?
 8. Compilar e testar antes de entregar.
 
-## 6. Exemplos para abrir antes da prova
+## 6. Teste rápido sem modificar o código
 
-- Pilha: `pilhas/src/ExemploPilha.java` (executar com `java -cp bin ExemploPilha`).
+Cada pasta possui `produtos-exemplo.txt` (seis produtos) e o `produtos.txt` original (7.750 produtos). Após compilar e estando dentro da pasta `pilhas` ou `filas`, use:
+
+```powershell
+java -cp bin App produtos-exemplo.txt
+```
+
+Para usar os dados originais, execute `java -cp bin App`. O programa recebe o nome do arquivo pelo primeiro argumento, sem alterar os métodos da professora.
+
+## 7. Exemplos para abrir antes da prova
+
+- Pilha: `pilhas/src/ExemploPilha.java` (executar com `java -cp bin ExemploPilha`). Inclui `String` e `Pedido`.
 - Fila: `filas/src/ExemploFila.java` (executar com `java -cp bin ExemploFila`).
 - Sistema completo: `pilhas/src/App.java` ou `filas/src/App.java`, com menu e `produtos.txt`.
 

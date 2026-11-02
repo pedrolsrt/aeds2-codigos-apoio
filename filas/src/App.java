@@ -241,7 +241,7 @@ public class App {
 		
 		teclado = new Scanner(System.in, "UTF-8");
         
-		nomeArquivoDados = "produtos.txt";
+		nomeArquivoDados = args.length > 0 ? args[0] : "produtos.txt";
         produtosCadastrados = lerProdutos(nomeArquivoDados);
         if (produtosCadastrados == null) {
             System.out.println("Nao foi possivel carregar produtos.txt. Execute na raiz do projeto.");
