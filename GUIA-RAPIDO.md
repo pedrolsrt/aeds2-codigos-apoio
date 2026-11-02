@@ -48,3 +48,11 @@
 6. Dados: `Pedido`, `ItemDePedido`, `Produto`?
 7. Menu e formato de saída?
 8. Compilar e testar antes de entregar.
+
+## 6. Exemplos para abrir antes da prova
+
+- Pilha: `pilhas/src/ExemploPilha.java` (executar com `java -cp bin ExemploPilha`).
+- Fila: `filas/src/ExemploFila.java` (executar com `java -cp bin ExemploFila`).
+- Sistema completo: `pilhas/src/App.java` ou `filas/src/App.java`, com menu e `produtos.txt`.
+
+**Limite do material:** não recebemos o enunciado da avaliação nem o template oficial da oficina de Filas. Os arquivos são bases de consulta e não garantem solução sem adaptações.
